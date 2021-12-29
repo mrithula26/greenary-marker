@@ -1,0 +1,36 @@
+Dep={}
+while True:
+print("\n greenary super market...")
+print("\n 1.input details\n 2.delete based on pdt_code\n 3.particular product\n 4.display all\n 5.exit)
+ch=int(input("Enter your options:"))
+  if ch==1:
+     n=int(input("Enter no.of products:"))
+     for i in range(0,n):
+print("Enter products",i+1,"details...")
+pdt_code=int(input("Enter product code:"))
+    name=input("Enter product name:")
+    Qty=int(input("Enter quantity:"))
+    price=int(input("Enter price:))
+Dept[pdt_code]={'pdt_code':pdt_code,'name':name,'Qty':Qty,'price':price}
+elif ch==2:
+Dep_no=int(input("Enter pdt_code to delete:"))
+Dept.pop(Dep_no)
+print("Mission successful!!!")
+elif ch==3:
+Dep_no=int(input("Enter pdt_code to check:"))
+      flag=Flase
+      for j in Dept:
+          if j==Dep_no:
+              flag==True
+       else:
+print("Product details=",j,Dept[j])
+elif ch==4:
+print(Dept)
+print("product details...")
+      print("pdt_code\tnames\tQty\tprice")
+      for key in Dep:
+print("\t",key,"\t",Dept[key]['pdt_code'],"\t",Dept[key]['name'],"\t",Dept[key]['Qty'],"\t",Dept[key]['price'])
+elifch==5:
+print("Thankyou you!!!")
+    break
+
